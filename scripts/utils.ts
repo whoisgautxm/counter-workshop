@@ -16,8 +16,9 @@ export async function getCompiledCode(filename: string) {
     return JSON.parse(file.toString("ascii"));
   });
 
+  console.log("sieraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
   const [sierraCode, casmCode] = await Promise.all(code);
-
+console.log("sieraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa---------------------------------")
   return {
     sierraCode,
     casmCode,
